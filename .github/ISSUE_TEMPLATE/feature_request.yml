@@ -1,0 +1,35 @@
+name: Idea / feature request
+description: Something that would make GuildHub better for your guild.
+title: "[idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        GuildHub is made for players with limited time: "what can I do tonight?". Ideas that save time or help guildies find each other are especially welcome.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      placeholder: "Show who is at the same quest step as me."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help?
+      description: What would you be able to do that is hard today?
+  - type: dropdown
+    id: tab
+    attributes:
+      label: Where would it fit?
+      options:
+        - Home
+        - Overview
+        - Crafters
+        - Quests
+        - Members
+        - Settings
+        - Minimap button
+        - Something new
+        - Not sure

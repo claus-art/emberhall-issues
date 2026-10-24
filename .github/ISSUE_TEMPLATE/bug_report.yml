@@ -1,0 +1,58 @@
+name: Bug report
+description: Something in GuildHub does not work as it should.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping! **Tip:** the easiest way is the **Report a bug** button in the game (Settings, or `/gh bug`) – it fills in the version and the errors for you.
+        Please do not write character or guild names here – reports are public.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, and what went wrong? Which tab (Home, Overview, Crafters, Quests, Members, Settings)?
+      placeholder: "I clicked Invite all online on the Quests tab, and nothing happened."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      placeholder: "My guildies to get a group invite."
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again (if you know them)
+      placeholder: |
+        1. Open GuildHub with /gh
+        2. Go to Quests
+        3. ...
+  - type: input
+    id: version
+    attributes:
+      label: GuildHub version
+      description: Type `/gh version` in the game.
+      placeholder: "0.8.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: alone
+    attributes:
+      label: Were other guildies with GuildHub online?
+      options:
+        - "Yes"
+        - "No, I was the only one"
+        - "I don't know"
+  - type: textarea
+    id: errors
+    attributes:
+      label: Error messages (if any)
+      description: Lua errors from the game or another error addon (e.g. BugSack). Leave empty if there were none.
+      render: text
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Drag a screenshot in here. Please crop or blur names.
